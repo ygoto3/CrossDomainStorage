@@ -1,0 +1,27 @@
+{
+  "name": "CrossDomainStorage",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ygoto3/CrossDomainStorage",
+  "description": "A cross domain storage solution with an API to store data through iframe. Use local storage on all the browsers except Safari. Use cookies on Safari because of the default option of 'From third parties and advertisers.'",
+  "main": "./dist/index.js",
+  "keywords": [
+    "iframe",
+    "postMessage",
+    "localStorage",
+    "cookie"
+  ],
+  "authors": [
+    "Yusuke Goto"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}

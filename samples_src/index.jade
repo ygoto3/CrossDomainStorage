@@ -1,0 +1,81 @@
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title CrossDomainStorage sample
+    link(
+      rel="stylesheet"
+      href="./css/bootstrap.min.css"
+    )
+    link(
+      rel="stylesheet"
+      href="./css/bootstrap-theme.min.css"
+    )
+  body
+    pre#stored_data
+    form(name="SampleForm").form-horizontal
+      legend Adding Data
+      .form-group
+        .control-group
+          label.col-sm-2.control-label Key
+          .col-sm-10
+            input#add_key(
+              name="add_key"
+              type="text"
+              placeholder="Key"
+            ).form-control
+      .form-group
+        .control-group
+          label.col-sm-2.control-label Value
+          .col-sm-10
+            input#add_value(
+              name="add_value"
+              type="text"
+              placeholder="Value"
+            ).form-control
+      .form-group
+        .col-sm-offset-2.col-sm-10
+          button#add_submit(
+            name="add_submit"
+            type="submit"
+          ).btn.btn-primary Add
+
+      legend Removing Data
+      .form-group
+        .control-group
+          label.col-sm-2.control-label Key
+          .col-sm-10
+            input#remove_key(
+              name="remove_key"
+              type="text"
+              placeholder="Key"
+            ).form-control
+      .form-group
+        .col-sm-offset-2.col-sm-10
+          button#remove_submit(
+            name="remove_submit"
+            type="button"
+          ).btn.btn-danger Remove
+
+      legend Getting Data
+      .form-group
+        .control-group
+          label.col-sm-2.control-label Key
+          .col-sm-10
+            input#get_key(
+              name="get_key"
+              type="text"
+              placeholder="Key"
+            ).form-control
+      .form-group
+        p#get_value
+      .form-group
+        .col-sm-offset-2.col-sm-10
+          button#get_submit(
+            name="get_submit"
+            type="button"
+          ).btn.btn-primary Get
+
+    script(
+      type="text/javascript"
+      src="./js/samples.js"
+    )

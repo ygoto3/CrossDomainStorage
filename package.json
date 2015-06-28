@@ -1,0 +1,37 @@
+{
+  "name": "CrossDomainStorage",
+  "version": "0.0.1",
+  "description": "A cross domain storage solution with an API to store data through iframe. Use local storage on all the browsers except Safari. Use cookies on Safari because of the default option of 'From third parties and advertisers.'",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ygoto3/CrossDomainStorage.git"
+  },
+  "keywords": [
+    "iframe",
+    "postMessage",
+    "localStorage",
+    "cookie"
+  ],
+  "author": "Yusuke Goto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ygoto3/CrossDomainStorage/issues"
+  },
+  "homepage": "https://github.com/ygoto3/CrossDomainStorage",
+  "devDependencies": {
+    "babelify": "^6.1.2",
+    "gulp": "^3.8.11",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-connect": "^2.2.0",
+    "gulp-cssnext": "^1.0.1",
+    "gulp-jade": "^1.0.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.2.0",
+    "require-dir": "^0.3.0"
+  }
+}
